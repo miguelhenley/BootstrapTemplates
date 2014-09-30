@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+</head>
+<body>
+
+<div class="container">
+    <h2>Teste com menu dropdown</h2>
+
+    <div class="btn-group">
+        <button data-toggle="dropdown" class="btn btn-primary btn-sm dropdown-toggle">Opções <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li><a href="#">Opção 1</a></li>
+            <li><a href="#">Opção 2</a></li>
+            <li class="divider"></li>
+            <li><a href="#" data-toggle="modal" data-backdrop="static" data-target="#myModal">Mostrar Janela Modal</a>
+            </li>
+            <li><a href="http://www.spoj.com">SPOJ</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<!-- Janela Modal -->
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span></button>
+                <h4 class="modal-title">Janela Modal</h4>
+            </div>
+            <div class="modal-body">
+                <p>Ola!!!</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- Fim janela Modal -->
+
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
+</body>
+</html>
