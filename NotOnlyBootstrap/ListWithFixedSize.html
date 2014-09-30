@@ -7,18 +7,18 @@
     <style>
 
         .meuDiv {
-            width: 700px;
+            width: 550px;
         }
 
-        ul {
+        ul.fixed {
             list-style-type: none;
         }
 
-        li {
+        ul.fixed > li {
             padding-left: 20px;
         }
 
-        li:hover {
+        ul.fixed > li:hover {
             color: white;
             background-color: red;
             cursor: pointer;
@@ -32,8 +32,9 @@
 <div class="container">
     <h2>Pequeno teste com listas de tamanho fixo</h2>
     <h5>Mova o cursor sobre a lista abaixo:</h5>
+
     <div class="meuDiv">
-        <ul>
+        <ul class="fixed">
             <li>Elemento 1</li>
             <li>Elemento 2</li>
             <li>Elemento 3</li>
@@ -43,6 +44,25 @@
             <li>Elemento "n"</li>
         </ul>
     </div>
+
+    <br/>
+    <br/>
+    <br/>
+
+    <blockquote class="pull-left alert-success">
+        <div style="font-size: 12px">
+          Aqui um pequeno marcador em um <b>blockquote</b>, com estilos já criados pelo Bootstrap.
+            <br>
+            Por exemplo: Este que esta' sendo utilizado e' o <b>alert-sucess</b>, mas ha outros tambem:
+            <ul>
+                <li>alert-danger</li>
+                <li>alert-info</li>
+                <li>alert-link</li>
+                <li>alert-warning</li>
+            </ul>
+        </div>
+    </blockquote>
+
 </div>
 
 
